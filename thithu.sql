@@ -33,6 +33,8 @@ primary key (maud, mand)
 )
 alter table ghinhan add constraint FK_GHINHAN_MAUD foreign key (maud) references ungdung(maud)
 alter table ghinhan add constraint FK_GHINHAN_MAND foreign key (mand) references nguoidung(mand)
+alter table ungdung add constraint FK_UNGDUNG_MANPT foreign key (manpt) references nhapt(manpt)
+
 
 insert into nhapt values ('N001','Gameloft','2006/06/20',100)
 insert into nhapt values ('N002','Ketchapp','2010/07/18',20)
